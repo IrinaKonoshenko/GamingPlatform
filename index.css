@@ -33,6 +33,7 @@ body {
 * {
   box-sizing: border-box;
   font-family: "Roboto";
+  background-color: var(--black-color);
 }
 .link {
   text-decoration: none;
@@ -46,4 +47,68 @@ body {
 .container {
   width: 1440px;
   margin: 0 auto;
+}
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --orange-color: #e87d0e;
+  --head-btn-color: #fa9021;
+  --gradient-btn: #fa8305, #fb9e3c;
+  --point-color: #dc7000;
+  --icon-color: #dc7000;
+}
+.header {
+  padding-top: 37px;
+  padding-bottom: 121px;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  color: var(--white-color);
+  font-family: "Poppins";
+  font-size: 29px;
+  font-weight: 800;
+}
+.header__right {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  gap: 88px;
+}
+.header__link {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white-color);
+}
+.header__link:active,
+.header__link:hover,
+.header__focus {
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--icon-color);
+}
+.header__btn {
+  background-color: var(--head-btn-color);
+  border-radius: 6px;
+  color: var(--white-color);
+  font-family: "Poppins";
+  font-size: 13px;
+  font-weight: 400;
+  padding: 10px 28px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color ease-in-out 0.3s;
+}
+.header__btn:hover {
+  background-color: var(--point-color);
+}
+.header__btn:active {
+  top: 1px;
 }
