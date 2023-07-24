@@ -28,12 +28,11 @@ button {
 
 body {
   font-family: Roboto;
+  background-color: var(--black-color);
 }
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto";
-  background-color: var(--black-color);
 }
 .link {
   text-decoration: none;
@@ -45,7 +44,7 @@ body {
 }
 
 .container {
-  width: 1440px;
+  width: 1170px;
   margin: 0 auto;
 }
 :root {
@@ -58,8 +57,22 @@ body {
   --icon-color: #dc7000;
 }
 .header {
+  left: 0;
+  right: 0;
+  top: 0;
   padding-top: 37px;
-  padding-bottom: 121px;
+  padding-bottom: 37px;
+  position: fixed;
+  transition: all ease-in-out 0.3s;
+  z-index: 10;
+}
+.header .container {
+  width: 1330px;
+}
+.header.fixed {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-color: #000;
 }
 .header__content {
   display: flex;
@@ -111,4 +124,114 @@ body {
 }
 .header__btn:active {
   top: 1px;
+}
+
+.hero__btn {
+  margin-top: 57px;
+}
+.header__btn .btn {
+  font-weight: 500;
+}
+
+.hero {
+  padding-top: 203px;
+  padding-bottom: 178px;
+  position: relative;
+}
+.hero__content {
+  max-width: 527px;
+}
+.hero__txt {
+  color: var(--orange-color);
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.552;
+}
+.hero__title {
+  margin-top: 17px;
+  color: var(--white-color);
+  font-family: "Poppins";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.552;
+}
+.hero__description {
+  margin-top: 26px;
+  color: var(--white-color);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+}
+.hero__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  fill: #fff;
+}
+
+.hero__unity {
+  position: absolute;
+  left: -123px;
+  top: 409px;
+}
+.hero__unreal {
+  position: absolute;
+  left: 396px;
+  top: 218px;
+}
+.hero__cry {
+  position: absolute;
+  left: 56px;
+  top: 202px;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  font-family: "Poppins";
+  transition: opacity ease-in-out 0.3s;
+  position: relative;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:active {
+  top: 1px;
+}
+.btn--small {
+  font-size: 13px;
+  line-height: normal;
+  padding: 10.5px 30px;
+}
+.btn--medium {
+  font-size: 16px;
+  line-height: 1.875;
+  padding: 9px 21.5px;
+}
+
+.btn--rounded-full {
+  border-radius: 60px;
+}
+.btn--rounded-6 {
+  border-radius: 6px;
+}
+.btn--gradient {
+  background: linear-gradient(113deg, #fa8305 0%, #fb9e3c 100%);
+}
+.btn--orange {
+  background-color: #dc7000;
+}
+.btn--blue {
+  background-color: #2351f5;
+}
+.btn--pink {
+  background-color: #ff8484;
+}
+.btn--green {
+  background-color: #23a54f;
+}
+.btn--violet {
+  background-color: #9921c3;
 }
