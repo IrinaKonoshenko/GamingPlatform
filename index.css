@@ -281,3 +281,112 @@ body {
   font-weight: 500;
   line-height: 1.875;
 }
+.spiderblock {
+  padding-top: 129px;
+  padding-bottom: 157px;
+  background: linear-gradient(180deg, #000 0%, #4a2800 100%);
+  backdrop-filter: blur(7px);
+}
+.spiderblock__title {
+  color: var(--white-color);
+  font-family: "Poppins";
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.875;
+  text-align: center;
+}
+.spiderblock__description {
+  margin-top: 67px;
+  color: var(--white-color);
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.875;
+}
+.spiderblock__txt {
+  margin-top: 32px;
+  color: var(--white-color);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.875;
+  max-width: 545px;
+}
+.spiderblock__points {
+  position: relative;
+}
+.spiderblock__img {
+  width: 100%;
+  overflow: hidden;
+  height: 462px;
+  border-radius: 5px;
+  margin-top: 46px;
+  z-index: 100;
+}
+.spiderblock__icon {
+  fill: var(--point-color);
+  position: absolute;
+  top: -67px;
+  right: 125px;
+}
+.mountain {
+  padding-top: 93px;
+  padding-bottom: 93px;
+  background: url(./img/img/imgblock-1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+}
+.mountain__title {
+  color: var(--white-color);
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.875;
+  text-align: center;
+}
+.mountain__description {
+  margin-top: 25px;
+  color: var(--white-color);
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+}
+.mountain__list {
+  margin-top: 99px;
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mountain__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mountain__circle {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+}
+.mountain__svg {
+  fill: var(--point-color);
+}
+.mountain__txt {
+  color: var(--white-color);
+  margin-top: 30px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.875;
+}
+.mountain__icon {
+  fill: var(--icon-color);
+  margin-top: 24px;
+}
