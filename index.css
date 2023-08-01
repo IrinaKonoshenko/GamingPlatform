@@ -271,10 +271,18 @@ body {
   margin-top: 57px;
 }
 .gamers__block {
+  width: 251px;
   height: 277px;
-  width: 100%;
   overflow: hidden;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gamers__block img {
+  height: 100%;
+  width: auto;
+  max-width: none;
 }
 .gamers__description {
   display: flex;
@@ -459,15 +467,34 @@ body {
   flex-wrap: wrap;
   margin-top: 71px;
   gap: 27px;
+  list-style-type: none;
 }
-.projects__img {
-  width: 100%;
-  height: 223px;
+.projects__item {
+  width: 371px;
   overflow: hidden;
   border-radius: 20px;
+  flex-grow: 1;
+}
+.projects__item:nth-child(4) {
+  width: 246px;
+}
+.projects__item a {
+  display: block;
+}
+.projects__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
+}
+.projects__img img {
+  min-height: 100%;
+  min-width: 100%;
+  max-width: none;
 }
 .projects__button {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .projects__btn {
   margin-top: 72px;
@@ -644,4 +671,10 @@ body {
   font-weight: 400;
   line-height: 1.906;
   text-align: center;
+}
+.current {
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--icon-color);
+}
+.abouthero {
 }
