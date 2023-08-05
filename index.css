@@ -614,8 +614,6 @@ body {
   font-weight: 400;
   line-height: 1.863;
 }
-.footer__link-menu {
-}
 .footer__list-social {
   display: flex;
   gap: 16px;
@@ -975,4 +973,152 @@ body {
   font-size: 23px;
   font-weight: 600;
   line-height: normal;
+}
+.lorem .container {
+  width: 1300px;
+}
+.contacts {
+  padding-top: 186px;
+  padding-bottom: 160px;
+}
+.contacts .container {
+  width: 1190px;
+}
+.contacts__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts__link {
+  font-size: 16px;
+  line-height: 2.085;
+}
+.contacts__txt {
+  color: #e47500;
+}
+.contacts__title {
+  margin-top: 15px;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 1.805;
+}
+.contacts__description {
+  margin-top: 13px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.875;
+}
+.contacts__picture {
+  margin-top: 93px;
+  width: 100%;
+  overflow: hidden;
+}
+.contacts__block {
+  margin-top: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts__block-one {
+}
+.contacts__block-title {
+  font-size: 16px;
+  line-height: 1.895;
+}
+.contacts__block-list {
+  margin-top: 18px;
+  display: flex;
+  gap: 16px;
+}
+.contacts__block-item {
+  background-color: #1c140f;
+  border-radius: 50%;
+  padding: 11px 11px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts__block-icon {
+  fill: var(--white-color);
+}
+.contacts__block-two {
+  display: flex;
+  gap: 25px;
+  padding: 0 105px;
+  height: 102px;
+  align-items: center;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.contacts__block-phone {
+  fill: var(--white-color);
+}
+.contacts__block-number {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+}
+.contacts__block-three {
+  display: flex;
+  gap: 19px;
+}
+.contacts__block-point {
+  fill: var(--white-color);
+}
+.contacts__block-location {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+}
+.mold {
+  background-color: #1c140f;
+  padding-top: 54px;
+  padding-bottom: 63px;
+}
+.mold__title {
+  font-size: 30px;
+  line-height: 1.895;
+  text-align: center;
+}
+.mold__description {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.895;
+  text-align: center;
+}
+.mold__form {
+  margin-top: 79px;
+  display: grid;
+  grid-template-areas:
+    aaa bbb
+    ccccccc
+    ddddddd;
+}
+.mold__txt {
+  color: #4f4f4f;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.754;
+  letter-spacing: -0.3px;
+}
+.mold__input {
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 0.6px solid #cecece;
+}
+.input-one {
+  grid-area: a;
+}
+.input-two {
+  grid-area: b;
+}
+.input-three {
+  grid-area: c;
+}
+.mold__textarea {
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 0.6px solid #cecece;
 }
