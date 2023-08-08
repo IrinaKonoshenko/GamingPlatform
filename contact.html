@@ -44,9 +44,12 @@
                 </li>
               </ul>
             </nav>
-            <button class="btn btn--rounded-6 btn--orange btn--small">
-              <a href="./contact.html" class="link">Contact us</a>
-            </button>
+            <a
+              href="./contact.html"
+              class="btn btn--rounded-6 btn--orange btn--small link"
+            >
+              Contact us
+            </a>
           </div>
         </div>
       </div>
@@ -154,23 +157,27 @@
             Lorem Ipsum is simply dummy text of the printing.
           </div>
           <form action="" class="mold__form">
-            <div class="mold__input input-one">
-              <div class="mold__txt">First Name</div>
-              <input type="text" />
+            <div class="mold__line">
+              <div class="mold__block input__line">
+                <div class="mold__txt">First Name</div>
+                <input type="text" />
+              </div>
+              <div class="mold__block input__line">
+                <div class="mold__txt">Last Name</div>
+                <input type="text" />
+              </div>
             </div>
-            <div class="mold__input input-two">
-              <div class="mold__txt">Last Name</div>
-              <input type="text" />
-            </div>
-            <div class="mold__input input-three">
+            <div class="mold__block">
               <div class="mold__txt">Email Address</div>
               <input type="text" />
             </div>
-            <div class="mold__input mold__textarea">
+            <div class="mold__block">
               <div class="mold__txt">Message</div>
               <textarea name="Message" id="" cols="30" rows="10"> </textarea>
             </div>
-            <button class="mold__btn btn btn--orange">Get in touch</button>
+            <div class="mold__button">
+              <button class="mold__btn btn btn--orange">Get in touch</button>
+            </div>
           </form>
         </div>
       </div>

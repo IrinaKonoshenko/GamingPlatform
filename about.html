@@ -18,6 +18,10 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -46,25 +50,41 @@
                 </li>
               </ul>
             </nav>
-            <button class="btn btn--rounded-6 btn--orange btn--small">
-              <a href="./contact.html" class="link">Contact us</a>
-            </button>
+            <a
+              href="./contact.html"
+              class="btn btn--rounded-6 btn--orange btn--small link"
+            >
+              Contact us
+            </a>
           </div>
         </div>
       </div>
     </header>
     <main>
       <div class="abouthero">
-        <div class="abouthero__picture">
-          <img src="./img/img/hero-2.jpg" alt="" class="abouthero__img" />
+        <div class="abouthero__picture swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/img/hero-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/img/hero-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/img/hero-2.jpg" alt="" />
+            </div>
+          </div>
           <div class="abouthero__block">
-            <svg width="12px" height="12px" class="abouthero__icon">
-              <use href="./img/symbol-defs.svg#icon-arrowleft-2"></use>
-            </svg>
-            1 of 2
-            <svg width="12px" height="12px" class="abouthero__icon">
-              <use href="./img/symbol-defs.svg#icon-arrowright-2"></use>
-            </svg>
+            <button class="abouthero__block-prev abouthero-swiper__btn">
+              <svg width="12px" height="12px" class="abouthero__icon">
+                <use href="./img/symbol-defs.svg#icon-arrowleft-2"></use>
+              </svg>
+            </button>
+            <button class="abouthero__block-next abouthero-swiper__btn">
+              <svg width="12px" height="12px" class="abouthero__icon">
+                <use href="./img/symbol-defs.svg#icon-arrowright-2"></use>
+              </svg>
+            </button>
           </div>
         </div>
         <div class="container">
@@ -90,32 +110,32 @@
           </div>
         </div>
       </div>
-      <div class="reviews">
+      <div class="advantages">
         <div class="container">
-          <div class="reviews__title">Why work with us</div>
-          <ul class="reviews__list">
-            <li class="reviews__item">
-              <div class="reviews__item-txt txt--one">Lorem ipsum</div>
-              <div class="reviews__item-title">Lorem Ipsum</div>
-              <div class="reviews__item-description">
+          <div class="advantages__title">Why work with us</div>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__item-txt txt--one">Lorem ipsum</div>
+              <div class="advantages__item-title">Lorem Ipsum</div>
+              <div class="advantages__item-description">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s,
               </div>
             </li>
-            <li class="reviews__item">
-              <div class="reviews__item-txt txt--two">Lorem ipsum</div>
-              <div class="reviews__item-title">Lorem Ipsum</div>
-              <div class="reviews__item-description">
+            <li class="advantages__item">
+              <div class="advantages__item-txt txt--two">Lorem ipsum</div>
+              <div class="advantages__item-title">Lorem Ipsum</div>
+              <div class="advantages__item-description">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s,
               </div>
             </li>
-            <li class="reviews__item">
-              <div class="reviews__item-txt txt--three">Lorem ipsum</div>
-              <div class="reviews__item-title">Lorem Ipsum</div>
-              <div class="reviews__item-description">
+            <li class="advantages__item">
+              <div class="advantages__item-txt txt--three">Lorem ipsum</div>
+              <div class="advantages__item-title">Lorem Ipsum</div>
+              <div class="advantages__item-description">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s,
@@ -301,6 +321,8 @@
         </div>
       </footer>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
